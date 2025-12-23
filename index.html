@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Prashant Sharma Dhungana — Software Developer. Portfolio showcasing projects, skills, and contact.">
-    <title>Prashant Sharma Dhungana — Portfolio</title>
+    <meta name="description" content="Prashant Sharma Dhungana — Software Developer. Specialized in Python, Java, and Web Development.">
+    <meta property="og:title" content="Prashant Sharma Dhungana — Portfolio">
+    <meta property="og:description" content="Software Development Engineer (SDE) Portfolio.">
+    <meta property="og:type" content="website">
+    
+    <title>Prashant Sharma Dhungana | SDE Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,77 +25,83 @@
     <!-- NAVBAR -->
     <header>
         <nav class="navbar">
-            <div class="logo">Prashant<span> Sharma Dhungana</span></div>
+            <a href="#home" class="logo">Prashant<span class="dot">.</span></a>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+            <div class="nav-menu-wrapper">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </nav>
     </header>
 
     <!-- HOME -->
     <main>
         <section id="home" class="home">
-            <div class="home-content">
-                <h1>Hello, I'm <span>Prashant</span></h1>
-                <h2>Software Development Engineer (SDE) | Problem Solver</h2>
+            <div class="container home-content reveal">
+                <span class="greeting">Hello, I'm</span>
+                <h1>Prashant Sharma</h1>
+                <h2>Software Development Engineer</h2>
                 <p>
-                    I build scalable, efficient software with a strong foundation in data structures and web development.
-                    Alongside core software engineering, I’m actively developing skills in AI and data-driven systems
-                    to grow into advanced engineering roles.
+                    Building scalable, efficient software with a strong foundation in data structures and web development. 
+                    Actively bridging the gap between core engineering and AI-driven systems.
                 </p>
                 <div class="home-buttons">
-                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="#projects" class="btn primary">View Projects <i class="fas fa-arrow-right"></i></a>
                     <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Its-PrashantTechie" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/prashant-sharma-dhungana-30b27b33a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:prashantsrma41@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </section>
 
         <!-- ABOUT -->
         <section id="about" class="about">
-            <div class="about-container">
+            <div class="container">
                 <h2 class="section-title">About Me</h2>
-                <div class="about-grid">
+                <div class="about-grid reveal">
                     <div class="about-photo">
-                        <img src="prashantweb.jpeg" alt="Prashant profile photo" class="profile-img">
+                        <!-- Ensure your image is high quality -->
+                        <img src="prashantweb.jpeg" alt="Prashant Profile" class="profile-img">
                     </div>
 
                     <div class="about-bio">
+                        <h3>Problem Solver & Developer</h3>
                         <p>
-                            I’m an aspiring Software Development Engineer (SDE) with  building experience  
-                            web applications and backend systems using Python, Java, HTML, CSS, and 
-                            JavaScript. I enjoy solving complex problems and designing scalable, maintainable
-                            software. Alongside software engineering, I am actively learning machine learning 
-                            and AI concepts, applying them to small projects to prepare for a transition into
-                            data-driven roles.
+                            I am an aspiring SDE with experience building web applications and backend systems using 
+                            <strong>Python, Java, and JavaScript</strong>. I enjoy solving complex problems and designing 
+                            maintainable software. I am also exploring Machine Learning to prepare for data-driven engineering roles.
                         </p>
-                        <p>
-                            Technologies I use:
-
-
-                            Frontend: HTML5, CSS3, JavaScript (ES6+), Responsive Design
-
-                            Backend & Databases: Python, Flask, MySQL
-
-                            Data & AI (Learning/Projects): NumPy, Pandas, Scikit-learn, EDA
-                        </p>
-
-                        <div class="about-skills">
-                            <h3>Skills</h3>
-                            <ul class="skills-list">
-                                <li>Problem Solving & Algorithms (DSA)</li>
-                                <li>Web Development </li>
-                                <li>Performance Optimization</li>
-                                <li>Database Design & REST APIs</li>
-                                <li>Clean Architecture</li>
-                                <li>Machine Learning Fundamentals & Data Analysis</li>
-                                <li>Version Control (Git)</li>
-                            </ul>
+                        
+                        <div class="skills-wrapper">
+                            <div class="skill-category">
+                                <h4>Core & Backend</h4>
+                                <div class="tags">
+                                    <span>Python</span><span>Java</span><span>Flask</span><span>MySQL</span><span>DSA</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Frontend</h4>
+                                <div class="tags">
+                                    <span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>Responsive UI</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Data & AI</h4>
+                                <div class="tags">
+                                    <span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Git</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,78 +110,117 @@
 
         <!-- PROJECTS -->
         <section id="projects" class="projects">
-            <div class="projects-container">
+            <div class="container">
                 <h2 class="section-title">Selected Projects</h2>
                 <div class="projects-grid">
-                    <article class="project-card">
-                        <h3>Portfolio Website</h3>
-                        <p>A modern, responsive portfolio to showcase projects and contact.</p>
-                        <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JS</span></div>
-                        <a href="#" class="project-btn">View Project</a>
-                    </article>
-
-                    <article class="project-card">
-                        <h3>Face-Login-System </h3>
-                        <p>Secure facial recognition login system using Python and OpenCV.</p>
+                    
+                    <article class="project-card reveal">
+                        <div class="card-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" target="_blank" aria-label="Source Code"><i class="fab fa-github"></i></a>
+                                <a href="#" target="_blank" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h3>Face Login System</h3>
+                        <p>Secure facial recognition login system utilizing Python, OpenCV, and Flask for backend authentication.</p>
                         <div class="tech-stack"><span>Python</span><span>OpenCV</span><span>Flask</span></div>
-                        <a href="#" class="project-btn">View Project</a>
                     </article>
 
-                    <article class="project-card">
-                        <h3>FakeNewsDetection.</h3>
-                        <p>Machine learning model to detect fake news using NLP and classification algorithms.</p>
-                        <div class="tech-stack"><span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>PassiveAggressiveClassifier</span></div>
-                        <a href="#" class="project-btn">View Project</a>
+                    <article class="project-card reveal">
+                        <div class="card-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Fake News Detection</h3>
+                        <p>ML model detecting fake news using NLP and PassiveAggressiveClassifier with high accuracy.</p>
+                        <div class="tech-stack"><span>Python</span><span>Scikit-learn</span><span>NLP</span></div>
                     </article>
-                    <article class="project-card">
-                        <h3>Soduko Solver using Backtracking</h3>
-                        <p>Implementation of a Sudoku solver using backtracking algorithm in Javascript.</p>
-                        <div class="tech-stack"><span>HTML5</span><span>CSS3</span><span>JavaScript(ES6)</span></div>
-                        <a href="#" class="project-btn">View Project</a>
+
+                    <article class="project-card reveal">
+                        <div class="card-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Sudoku Solver</h3>
+                        <p>Visual implementation of a Sudoku solver using the Backtracking algorithm.</p>
+                        <div class="tech-stack"><span>JavaScript</span><span>Algorithms</span><span>HTML/CSS</span></div>
                     </article>
-                    <article class="project-card">
-                        <h3>TicTacToe-With-Unbeatable-AI</h3>
-                        <p>A Tic Tac Toe game with an unbeatable AI opponent utilizing MinMax Algorithms implemented in Java .</p>
-                        <div class="tech-stack"><span>Java</span><span>MinMaxAlgorithm</span></div>
-                        <a href="#" class="project-btn">View Project</a>    
+
+                    <article class="project-card reveal">
+                        <div class="card-header">
+                            <i class="fas fa-folder-open folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3>Unbeatable AI TicTacToe</h3>
+                        <p>A game implementation featuring an unbeatable AI opponent utilizing the MinMax Algorithm.</p>
+                        <div class="tech-stack"><span>Java</span><span>MinMax</span><span>Game Dev</span></div>
+                    </article>
+                    
+                </div>
+                <div class="center-btn">
+                    <a href="https://github.com/Its-PrashantTechie" target="_blank" class="btn secondary small">View More on GitHub</a>
                 </div>
             </div>
         </section>
 
-        <!-- CONTACT (single) -->
+        <!-- CONTACT -->
         <section id="contact" class="contact">
-            <div class="contact-container">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact-content">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content reveal">
                     <div class="contact-info">
-                        <h3>Get in touch</h3>
                         <p>
-                            Interested in working together or have a question? Send a message
-                            and I’ll get back within 2 business days.
+                            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
+                            I'll try my best to get back to you!
                         </p>
-                        <ul>
-                            <li><strong>Email:</strong> <a href="mailto: prashantsrma41@gmail.com">prashantsrma41@gmail.com</a></li>
-                            <li><strong>Phone:</strong> <a href="tel:+919987430978">+91 9987430978</a></li>
-                            <li><strong>GitHub:</strong> <a href="https://github.com/Its-PrashantTechie" target="_blank" rel="noopener">https://github.com/Its-PrashantTechie</a></li>  
-                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prashant-sharma-dhungana-30b27b33a" target="_blank" rel="noopener">https://www.linkedin.com/in/prashant-sharma-dhungana-30b27b33a</a></li>
-                            <li><strong>Location:</strong> Coimbatore, India</li>
-                        </ul>
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:prashantsrma41@gmail.com">prashantsrma41@gmail.com</a>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel:+919987430978">+91 9987430978</a>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Coimbatore, India</span>
+                            </div>
+                        </div>
                     </div>
 
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group"><label class="sr-only" for="name">Name</label><input required id="name" type="text" placeholder="Your Name"></div>
-                        <div class="form-group"><label class="sr-only" for="email">Email</label><input required id="email" type="email" placeholder="Your Email"></div>
-                        <div class="form-group"><label class="sr-only" for="message">Message</label><textarea required id="message" rows="5" placeholder="Your Message"></textarea></div>
-                        <button type="submit" class="btn primary">Send Message</button>
-                        <p class="form-status" id="formStatus" aria-live="polite"></p>
+                    <!-- Note: For this form to work without backend, use Formspree.io -->
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input required id="name" name="name" type="text" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input required id="email" name="email" type="email" placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea required id="message" name="message" rows="5" placeholder="Hello..."></textarea>
+                        </div>
+                        <button type="submit" class="btn primary full-width">Send Message</button>
+                        <p class="form-status" id="formStatus"></p>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER (removed copyright/links per request) -->
-    <footer class="site-footer"></footer>
+    <footer class="site-footer">
+        <p>Designed & Built by Prashant Sharma Dhungana &copy; 2025</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
